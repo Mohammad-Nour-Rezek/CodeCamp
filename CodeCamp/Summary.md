@@ -23,4 +23,7 @@
     - 405 = Method Not Allowed
     - 409 = Conflict
   - 500: reporting that the server failed (server error).
-    - 500 = Internal Error (we did bad)
+    - 500 = Internal Server Error (we did bad)
+
+- IHttpActionResult return type: allow us to return payload and status code
+- in pmc: update-database -> to enforce all migrations happen
