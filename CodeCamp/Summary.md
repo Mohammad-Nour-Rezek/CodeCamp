@@ -1,1 +1,26 @@
-ASP.NET Web Api 2 (REST):
+## ASP.NET Web Api 2 (REST):
+
+- vs -> project properties -> web -> don't open a page [this is for testing just the API]
+- after build and start the project: in postman -> GET http://localhost:6600/api/values
+- extentions: open command, add new file [shift+F2 to add a file]
+
+- request process: GET req http://localhost:6600/api/values come -> /api/values is the route -> search all routes for match -> match it on action in a controller -> execute the action -> the result from the action return as a response
+- status codes: 
+  - 200: all successes.
+    - 200 = OK (it worked)
+    - 201 = Created
+    - 202 = Accepted
+  - 300: request was successful but something's changed.
+    - 302 = Found
+    - 304 = Not Modified (in case of caching)
+    - 307 = Temp Redirect
+    - 308 = Perm Redirect
+  - 400: you requested something incorrectly.
+    - 400 = Bad Request (you did bad)
+    - 401 = Unauthorized
+    - 403 = Forbidden
+    - 404 = Not Found
+    - 405 = Method Not Allowed
+    - 409 = Conflict
+  - 500: reporting that the server failed (server error).
+    - 500 = Internal Error (we did bad)
