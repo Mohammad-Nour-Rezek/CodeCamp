@@ -27,3 +27,8 @@
 
 - IHttpActionResult return type: allow us to return payload and status code
 - in pmc: update-database -> to enforce all migrations happen
+
+- must use model when dealing with data insted of entities
+- add AutoMapper to map fields as conventions
+  - add CampMappingProfile.cs for mapping process config
+  - register it as a single instance in the IoC AutoFac container 
