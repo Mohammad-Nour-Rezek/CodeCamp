@@ -37,3 +37,5 @@
   - if we want to return the object properties in camel case insted of pascal case for using javascript must use: 'Contract Serilization'
   - by default in web api we serializing in json, to enforce to return another type: in the req header -> key: Accept, value: text/xml
   - use this in WebApiConfig: config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+
+- add Route and RoutePrefix attribute
