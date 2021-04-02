@@ -32,3 +32,8 @@
 - add AutoMapper to map fields as conventions
   - add CampMappingProfile.cs for mapping process config
   - register it as a single instance in the IoC AutoFac container 
+
+- Contract Serilization:
+  - if we want to return the object properties in camel case insted of pascal case for using javascript must use: 'Contract Serilization'
+  - by default in web api we serializing in json, to enforce to return another type: in the req header -> key: Accept, value: text/xml
+  - use this in WebApiConfig: config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
