@@ -39,3 +39,4 @@
   - use this in WebApiConfig: config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
 
 - add Route and RoutePrefix attribute
+- if we put the type name before the prop name AutoMapper by convention will map it's value 'LocationVenueName, LocationAddress1, ...'
