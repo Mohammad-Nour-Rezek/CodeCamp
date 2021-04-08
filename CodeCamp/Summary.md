@@ -40,3 +40,19 @@
 
 - add Route and RoutePrefix attribute
 - if we put the type name before the prop name AutoMapper by convention will map it's value 'LocationVenueName, LocationAddress1, ...'
+
+- using query string we can get a data without create a seperate api for the req: http://localhost:6600/api/camps?includeTalks=true
+  - query string shuld not be requiered they shuld used to change the behavior of what's happening: sorting, paging, filtering
+  - 
+
+
+
+
+
+
+
+
+
+
+
+
